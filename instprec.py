@@ -14,6 +14,17 @@ print('Finished')
 
 def get_hpf_rv_precision(teff,jmag,vsini=3.,exptime=1800.):#,qfiles=None,ffiles=None):
     """
+    Estimate the HPF RV precision in m/s.
+
+    INPUT:
+        Teff - Teff in K
+        mag - Vmag (if magtype='johnson,v'
+        vsini - in km/s
+        exptime - in s
+
+    OUTPUT:
+        rv precision in m/s for that exposure time
+
     Note:
         TEFF range is 2500K - 5900K
         
@@ -98,6 +109,17 @@ def get_espresso_rv_precision(teff,mag,vsini=3.,exptime=1800.,verbose=True,magty
 
 def get_neid_rv_precision(teff,mag,vsini=3.,exptime=1800.,verbose=True,magtype='johnson,v'):#,qfiles=None,ffiles=None):
     """
+    Estimate the NEID RV precision in m/s.
+
+    INPUT:
+        Teff - Teff in K
+        mag - Vmag (if magtype='johnson,v'
+        vsini - in km/s
+        exptime - in s
+
+    OUTPUT:
+        rv precision in m/s for that exposure time
+
     Note:
         TEFF range is 2500K - 5900K
         
